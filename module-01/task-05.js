@@ -3,7 +3,7 @@
 let price;
 let userCountry = prompt('Plese enter your country');
 
-switch (userCountry.toUpperCase()) {
+switch (userCountry.toLowerCase()) {
   case 'КИТАЙ':
     price = 100;
     console.log(`Доставка в ${userCountry} будет стоить ${price} кредитов.`);

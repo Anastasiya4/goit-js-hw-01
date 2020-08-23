@@ -4,8 +4,10 @@ const credits = 23580;
 const pricePerDroid = 3000;
 
 let userInput = prompt('How much droids you want?');
-userInput = Number(userInput);
- let totalPrice = pricePerDroid * userInput;
+let quantity = Number(userInput);
+
+
+ let totalPrice = pricePerDroid * quantity;
 let leave = credits - totalPrice;
 
 if (userInput === null) {
@@ -15,6 +17,6 @@ if (userInput === null) {
 } else if (totalPrice > credits) {
   
   console.log(
-    `Вы купили ${userInput} дроидов, на счету осталось ${leave} кредитов.`,
+    `Вы купили ${quantity} дроидов, на счету осталось ${leave} кредитов.`,
   );
 }
